@@ -538,6 +538,14 @@ This follow-up clarified that opening a GitHub repository displays the source an
 
 This follow-up requested both final destinations: the public repository URL for Canvas and the local frontend URL for previewing the completed interactive design.
 
+### Follow-up prompt: final Canvas URL confirmation
+
+> confirming that THIS is the link i submit to canvas? [https://github.com/sanjanaranade/campus-customs-hw4](https://github.com/sanjanaranade/campus-customs-hw4)
+
+### Why this follow-up was needed
+
+This follow-up requested final confirmation of the exact public repository URL to submit for grading.
+
 - Add new prompts chronologically under the appropriate section.
 - Keep the original prompt text separate from implementation notes or results.
 - Never combine prompts from different problems into one section.
