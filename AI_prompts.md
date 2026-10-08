@@ -458,6 +458,14 @@ This follow-up defined the Problem 13 packaging contract, the public-repository 
 
 These follow-ups clarified what repository information is needed to publish the finished project and requested beginner-friendly instructions for locating or creating an empty public GitHub repository without sharing a password or access token.
 
+### Follow-up prompt: repository URL supplied
+
+> i think i did all that. is that what u need [https://github.com/sanjanaranade/campus-customs-hw4.git](https://github.com/sanjanaranade/campus-customs-hw4.git)
+
+### Why this follow-up was needed
+
+This follow-up supplied the exact public GitHub remote needed to publish the verified local `main` branch.
+
 - Add new prompts chronologically under the appropriate section.
 - Keep the original prompt text separate from implementation notes or results.
 - Never combine prompts from different problems into one section.
