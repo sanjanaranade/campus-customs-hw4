@@ -448,6 +448,16 @@ This follow-up completed the Problem 12 documentation requirement by making the 
 
 This follow-up defined the Problem 13 packaging contract, the public-repository goal, the exact grader-facing layout, the required local-only data and secret exclusions, the environment template, and the run instructions that must be documented before any push.
 
+### Follow-up prompt: creating the public repository
+
+> wait i think i have a github what do u need from me
+
+> how do i do that
+
+### Why follow-up prompts were needed
+
+These follow-ups clarified what repository information is needed to publish the finished project and requested beginner-friendly instructions for locating or creating an empty public GitHub repository without sharing a password or access token.
+
 - Add new prompts chronologically under the appropriate section.
 - Keep the original prompt text separate from implementation notes or results.
 - Never combine prompts from different problems into one section.
