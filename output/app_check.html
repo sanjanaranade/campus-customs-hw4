@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Customs — Problem 11 App Check</title>
+  <style>
+    :root { color: #17283c; background: #f6f3ed; font-family: Arial, sans-serif; }
+    body { max-width: 980px; margin: 0 auto; padding: 42px 24px 70px; line-height: 1.55; }
+    h1, h2 { color: #17375e; }
+    h1 { font-family: Georgia, serif; font-size: 42px; margin-bottom: 8px; }
+    h2 { border-top: 2px solid #d5ae5c; padding-top: 28px; margin-top: 42px; }
+    .status { background: #e5f2e9; border-left: 5px solid #38715d; padding: 14px 18px; }
+    .check { background: #fff; border: 1px solid #dedbd2; border-radius: 8px; padding: 18px; margin: 18px 0 28px; }
+    figure { margin: 18px 0 0; }
+    img { display: block; width: 100%; height: auto; border: 1px solid #dedbd2; border-radius: 6px; }
+    figcaption { color: #4d5c6b; font-size: .95rem; margin-top: 9px; }
+    code { background: #e9e6de; padding: 2px 5px; border-radius: 3px; }
+    li { margin: 7px 0; }
+  </style>
+</head>
+<body>
+  <h1>Problem 11 — Site testing (app check)</h1>
+  <p>Live check completed against the Vite frontend at <code>http://127.0.0.1:5173/</code> and FastAPI at <code>http://127.0.0.1:8000/</code>. The interactions were run with browser automation, and the screenshots below are the captured states.</p>
+
+  <div class="status"><strong>Result: PASS.</strong> The API health check passed, the frontend loaded, chat returned database-backed information, category search produced product cards, and Problem 9 Quick View opened successfully. The frontend production build also passed with <code>npm run build</code>.</div>
+
+  <section class="check">
+    <h2>1. Chat inventory and price check</h2>
+    <p><strong>Question tested:</strong> “What is the price and exact size-by-size stock for Basic Hoodie Big Yale? Please use the database.”</p>
+    <ul>
+      <li><strong>Database result:</strong> $68.00.</li>
+      <li><strong>Size-level stock:</strong> XS 15, S 5, M 5, L 8, XL 2, XXL 25; total 60.</li>
+      <li><strong>Observed behavior:</strong> The guide returned the exact price and every inventory quantity, identified the database-backed stock as current, and did not invent availability.</li>
+    </ul>
+    <figure>
+      <img src="app_check_images/chat-inventory.png" alt="Campus Customs chat showing the Basic Hoodie Big Yale price and exact inventory by size">
+      <figcaption>Figure 1. The live chat gives an honest $68 price and exact size-by-size stock for Basic Hoodie Big Yale from the SQLite catalogue and inventory tables.</figcaption>
+    </figure>
+  </section>
+
+  <section class="check">
+    <h2>2. Dynamic category search cards</h2>
+    <p><strong>Question tested:</strong> “What hoodies do you have?”</p>
+    <ul>
+      <li><strong>Observed behavior:</strong> The chat response populated the page-level <em>Guide picks</em> section with six catalogue-backed product cards.</li>
+      <li><strong>Returned cards:</strong> Basic Hoodie Big Yale; Brooks Brothers Double Knit Full Zip Hoodie Yale; Champion Full Zip Hood; Champion Reverse Weave Hoodie 1; Crew Left Chest Hoodie; District Vit Hoodie Vintage Bulldog.</li>
+      <li>The test also covered the natural plural “hoodies”; the catalogue search normalizes that category request to the real “hoodie” records.</li>
+    </ul>
+    <figure>
+      <img src="app_check_images/chat-search-cards.png" alt="Campus Customs Guide picks section showing six hoodie product cards with images and names">
+      <figcaption>Figure 2. Asking about hoodies dynamically adds six matching product cards to the page, with the catalogue image, name, price, and short information available to the shopper.</figcaption>
+    </figure>
+  </section>
+
+  <section class="check">
+    <h2>3. Problem 9 usability feature: Quick View</h2>
+    <p><strong>Interaction tested:</strong> Open Products, click the first product’s <em>Quick view</em> control, and confirm the modal appears.</p>
+    <ul>
+      <li><strong>Observed product:</strong> 2025 Yale Vs Harvard T Shirt.</li>
+      <li><strong>Observed price:</strong> $32.</li>
+      <li>The modal includes the product image, category, description, price, availability summary, close control, and a button to continue to full details. Product cards remain clickable for the single-item view.</li>
+    </ul>
+    <figure>
+      <img src="app_check_images/quick-view.png" alt="Campus Customs Quick View modal for the 2025 Yale Vs Harvard T Shirt">
+      <figcaption>Figure 3. Problem 9 Quick View opens directly from the Products page so shoppers can inspect an item without losing their place.</figcaption>
+    </figure>
+  </section>
+
+  <h2>Interaction and accessibility notes</h2>
+  <p>The tested controls use real buttons and inputs, product cards support click and keyboard activation, the modal has dialog semantics and a close control, and the site includes visible focus styling. Decorative motion is disabled when reduced motion is requested. The live test also found and corrected plural category matching for “hoodies” before the final screenshots were captured.</p>
+</body>
+</html>
