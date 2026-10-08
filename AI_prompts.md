@@ -490,6 +490,14 @@ This follow-up requested basic navigation help so the user could run the authent
 
 This follow-up requested verification that the authenticated push completed successfully and that the local repository remained intact.
 
+### Follow-up prompt: opening the website
+
+> great! but like how do i see the website lol
+
+### Why this follow-up was needed
+
+This follow-up requested the local development commands and browser address needed to view the completed frontend with its FastAPI backend.
+
 - Add new prompts chronologically under the appropriate section.
 - Keep the original prompt text separate from implementation notes or results.
 - Never combine prompts from different problems into one section.
