@@ -522,6 +522,14 @@ This follow-up identified the difference between a public source-code repository
 
 This follow-up confirmed that the required submission is the public repository URL, which graders can open and clone, rather than a separately hosted website URL.
 
+### Follow-up prompt: what graders see in a browser
+
+> but of tjeu open it in a browser they cant see my actual site right
+
+### Why this follow-up was needed
+
+This follow-up clarified that opening a GitHub repository displays the source and documentation, while viewing the interactive app requires running the frontend/backend with the local data pack or separately deploying the application.
+
 - Add new prompts chronologically under the appropriate section.
 - Keep the original prompt text separate from implementation notes or results.
 - Never combine prompts from different problems into one section.
