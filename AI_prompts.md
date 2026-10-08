@@ -498,6 +498,14 @@ This follow-up requested verification that the authenticated push completed succ
 
 This follow-up requested the local development commands and browser address needed to view the completed frontend with its FastAPI backend.
 
+### Follow-up prompt: submission clarification
+
+> so what do i submit im so confused
+
+### Why this follow-up was needed
+
+This follow-up requested a clear distinction between the local development address and the public GitHub repository URL required for the Canvas submission.
+
 - Add new prompts chronologically under the appropriate section.
 - Keep the original prompt text separate from implementation notes or results.
 - Never combine prompts from different problems into one section.
