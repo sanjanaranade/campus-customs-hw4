@@ -530,6 +530,14 @@ This follow-up confirmed that the required submission is the public repository U
 
 This follow-up clarified that opening a GitHub repository displays the source and documentation, while viewing the interactive app requires running the frontend/backend with the local data pack or separately deploying the application.
 
+### Follow-up prompt: submission link and local preview
+
+> ok so one more time can u give me both the link i need to submit as well as the final website just so i can see how cute it is
+
+### Why this follow-up was needed
+
+This follow-up requested both final destinations: the public repository URL for Canvas and the local frontend URL for previewing the completed interactive design.
+
 - Add new prompts chronologically under the appropriate section.
 - Keep the original prompt text separate from implementation notes or results.
 - Never combine prompts from different problems into one section.
