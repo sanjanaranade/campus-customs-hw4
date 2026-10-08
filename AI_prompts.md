@@ -474,6 +474,14 @@ This follow-up supplied the exact public GitHub remote needed to publish the ver
 
 This follow-up authorized running the prepared Git push from the project terminal, subject to the user's local GitHub authentication and without transmitting credentials in chat.
 
+### Follow-up prompt: locating the terminal
+
+> where is my vs code terminal window
+
+### Why this follow-up was needed
+
+This follow-up requested basic navigation help so the user could run the authenticated Git push locally without sharing credentials.
+
 - Add new prompts chronologically under the appropriate section.
 - Keep the original prompt text separate from implementation notes or results.
 - Never combine prompts from different problems into one section.
