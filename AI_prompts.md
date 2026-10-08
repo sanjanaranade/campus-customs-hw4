@@ -514,6 +514,14 @@ This follow-up requested a clear distinction between the local development addre
 
 This follow-up identified the difference between a public source-code repository and a separately deployed live website, so the submission guidance could be made explicit.
 
+### Follow-up prompt: Canvas clone-link requirement
+
+> ok the canvas instructions say "on canvas, submit the repo url which is teh link that ur graders can open and clone"
+
+### Why this follow-up was needed
+
+This follow-up confirmed that the required submission is the public repository URL, which graders can open and clone, rather than a separately hosted website URL.
+
 - Add new prompts chronologically under the appropriate section.
 - Keep the original prompt text separate from implementation notes or results.
 - Never combine prompts from different problems into one section.
