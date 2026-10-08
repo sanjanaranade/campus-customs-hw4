@@ -506,6 +506,14 @@ This follow-up requested the local development commands and browser address need
 
 This follow-up requested a clear distinction between the local development address and the public GitHub repository URL required for the Canvas submission.
 
+### Follow-up prompt: repository versus live website
+
+> so what i submit does NOT lead to the direct website i made tho
+
+### Why this follow-up was needed
+
+This follow-up identified the difference between a public source-code repository and a separately deployed live website, so the submission guidance could be made explicit.
+
 - Add new prompts chronologically under the appropriate section.
 - Keep the original prompt text separate from implementation notes or results.
 - Never combine prompts from different problems into one section.
